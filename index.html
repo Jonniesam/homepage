@@ -5,20 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <script defer src="main.js"></script>
     <title>Homepage</title>
 </head>
 <body>
     <nav>
-        <div class="container nav">
-            <img src="./images/Bobo_logo.png" alt="dog logo">
-
-            <button class="nav-button bg-transparent btn-open-slideout btn-toggle-slideout">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
+        <div class="container">
+            <img src="./images/Bobo_logo.png" alt="dog logo">           
+        </div>
+        <div>
+        <label class="hamburger-menu">
+            <input type="checkbox">
+        </label>
+        <aside class="sidebar">
+            <div>This</div>
+            <div>Is</div>
+            <div>The</div>
+            <div>Sidebar</div>
+    </aside>
         </div>
     </nav>
+    
     <header>
 
     </header>
@@ -43,6 +50,13 @@
         <section class="projects" id="projects">
             <div class="container">
             <h3>Projects</h3>
+                <button data-open-modal>Open</button>
+
+                <dialog data-modal>
+                    <div>This is an project example</div>
+                    <button data-close-modal>Close</button>
+                </dialog>
+
             </div>
         </section>
         <section class="mySkills" id="mySkills">
@@ -50,25 +64,25 @@
             <h3>My Skills</h3>
             <div class="skillContainer">
                 <picture>
-                    <img src="./images/logo-javascript.svg" alt="JavaScript Logo">
+                    <img class="skillPicture" src="./images/logo-javascript.svg" alt="JavaScript Logo">
                 </picture>
                 <p>JavaScript</p>
             </div>
             <div class="skillContainer">
                 <picture>
-                    <img src="./images/python-5.svg" alt="Python Logo">
+                    <img class="skillPicture" src="./images/python-5.svg" alt="Python Logo">
                 </picture>
                 <p>Python</p>
             </div>
             <div class="skillContainer">
                 <picture>
-                    <img src="./images/google-bigquery-logo-1.svg" alt="SQL Logo">
+                    <img class="skillPicture" src="./images/google-bigquery-logo-1.svg" alt="SQL Logo">
                 </picture>
                 <p>SQL</p>
             </div>
             <div class="skillContainer">
                 <picture>
-                    <img src="./images/r-lang.svg" alt="R Logo">
+                    <img class="skillPicture" src="./images/r-lang.svg" alt="R Logo">
                 </picture>
                 <p>R</p>
             </div>
